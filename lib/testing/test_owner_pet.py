@@ -50,7 +50,9 @@ def test_owner_has_pets():
 
     assert owner.pets() == [pet1, pet2]
 
-    Pet.all = []
+    # Pet.all = []
+    assert owner.pets() == [pet1, pet2]
+
 
 def test_owner_adds_pets():
     """Test Owner class has method add_pet(), validating and adding a pet"""
